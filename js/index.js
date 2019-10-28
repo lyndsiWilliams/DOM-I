@@ -127,3 +127,22 @@ contactEmail.textContent = siteContent.contact["email"];
 const footerText = document.querySelector('footer p');
 
 footerText.textContent = siteContent.footer["copyright"];
+
+
+// ----- Adding new content -----
+
+// Nav color change
+nav.forEach(element => {
+    element.style.color = "green";
+});
+
+// Adding items to nav bar
+const newFront = document.createElement("a");
+const newBack = document.createElement("a");
+const navSel = document.querySelector('nav');
+
+newFront.textContent = "Front";
+newBack.textContent = "Back";
+
+navSel.prepend(newFront);
+navSel.appendChild(newBack);
