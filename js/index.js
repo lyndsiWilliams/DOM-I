@@ -146,3 +146,15 @@ newBack.textContent = "Back";
 
 navSel.prepend(newFront);
 navSel.appendChild(newBack);
+
+
+// ----- Stretch -----
+
+document.querySelector('body').style.background = "gray";
+newFront.style.color = "purple";
+newBack.style.color = "blue";
+featuresH4.style.color = "red";
+aboutH4.style.color = "orange";
+servicesH4.style.color = "yellow";
+productH4.style.color = "green";
+visionH4.style.color = "indigo";
