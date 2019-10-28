@@ -9,7 +9,7 @@ const siteContent = {
         "img-src": "img/logo.png"
     },
     "cta": {
-        "h1": "DOM<br> Is<br> Awesome",
+        "h1": "DOM Is Awesome",
         "button": "Get Started",
         "img-src": "img/header-img.png"
     },
@@ -61,7 +61,7 @@ logo.setAttribute('src', siteContent["nav"]["img-src"]);
 // ----- Call to action construction -----
 
 const ctaH1 = document.querySelector('.cta-text h1');
-ctaH1.innerHTML = siteContent.cta["h1"];
+ctaH1.innerHTML = siteContent.cta["h1"].replace(/ /g, '<br>');
 
 const ctaBtn = document.querySelector('.cta-text button');
 ctaBtn.textContent = siteContent.cta["button"];
